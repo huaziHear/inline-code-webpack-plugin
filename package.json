@@ -1,6 +1,6 @@
 {
   "name": "inline-code-webpack-plugin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "webpack plugin 插入内联代码",
   "main": "index.js",
   "scripts": {},
