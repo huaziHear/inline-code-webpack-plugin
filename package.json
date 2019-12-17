@@ -1,0 +1,25 @@
+{
+  "name": "inline-code-webpack-plugin",
+  "version": "0.0.1",
+  "description": "webpack plugin 插入内联代码",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huaziHear/inline-code-webpack-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "inline code"
+  ],
+  "author": "fenghua.zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huaziHear/inline-code-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/huaziHear/inline-code-webpack-plugin#readme",
+  "dependencies": {
+    "html-webpack-plugin": "^4.0.0-beta.11"
+  }
+}
