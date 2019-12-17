@@ -26,7 +26,11 @@ module.exports = class InlineCodeWebpackPlugin {
         const hash = compilation.hash.substr(0,6);
         const config2tag = (config) => {
             if (typeof config === 'string') {
-                const assetName = entryNames.filter((t) => t.includes(`${config}-${hash}`))[0];
+                const key = config + '.js'
+                if (process.env.NODE_ENV === 'production') {
+                    key = `${config}-${hash}`;
+                }
+                const assetName = entryNames.filter((t) => t.includes(key))[0];
                 return {
                     tagName: assetName.match(/.js$/) ? 'script':'style',
                     innerHTML: compilation.assets[assetName].source()
